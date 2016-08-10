@@ -1,0 +1,27 @@
+language:
+  - cpp
+
+sudo:
+  - false
+
+addons:
+  apt:
+    packages:
+      - python3
+      - python3-setuptools # easy_install3
+
+matrix:
+  include:
+    - os: linux
+    - os: osx
+
+install:
+  # Info about OS
+  - uname -a
+
+  # Install Python 3
+  - if [[ "`uname`" == "Darwin" ]]; then travis_retry brew install python3; fi
+
+script:
+  - which pip || echo "pip not installed"
+  - which pip3 || echo "pip3 not installed"
