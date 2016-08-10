@@ -16,7 +16,9 @@ addons:
 matrix:
   include:
     - os: linux
+      env: THIS_IS_LINUX
     - os: osx
+      env: THIS_IS_OSX
 
 install:
   # Info about OS
