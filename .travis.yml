@@ -3,13 +3,13 @@
 language:
   - cpp
 
-# Container-based infrastructure (Linux)
-# * https://docs.travis-ci.com/user/migrating-from-legacy/#How-can-I-use-container-based-infrastructure%3F
 sudo:
-  - false
+  - true
 
 dist:
   - trusty
+
+group: deprecated-2017Q3
 
 install:
   # Info about OS
