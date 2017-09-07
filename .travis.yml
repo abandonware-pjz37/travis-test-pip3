@@ -8,6 +8,11 @@ language:
 sudo:
   - false
 
+addons:
+  apt:
+    packages:
+      - python3
+
 dist:
   - trusty
 
